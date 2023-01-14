@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVESTEASY</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand fl" href="#"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="home-img bi-house-door" viewBox="0 0 16 16">
+                  <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                  </svg>Invest Easy
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse fl navbar-collapse justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#purpose">Purpose</a>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#benefit">Benefit</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#testimony">Testimony</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="https://play.google.com/store/search?q=invest%20easy&c=apps" class="btn btn-primary btn-lg btn-menu" type="button" id="myLogin" onclick="alert('Your Download Process is Starting')"> DOWNLOAD <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="login-img bi-box-arrow-in-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                          <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                          </svg>
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <!-- Jumbotron -->
+      <div class="jumbotron p-5 mb-4 bg-light rounded-3">
+        <div class="container py-5">
+          <h5 class="display-4">Welcome to,</h5>
+          <h1 class="display-5 fw-bold">Invest Easy Application</h1>
+          <p class="display-6">Save and invest every day with Invest Easy. You can even start with spare change! Sign up in under 5 minutes.</p>
+          <a href="https://play.google.com/store/search?q=invest%20easy&c=apps" class="btn btn-primary btn-lg btn-data" type="button" onclick="alert('Your Download Process is Starting')"> Get the App Now</a>
+        </div>
+      </div>
+      <!-- Last Jumbotron -->
+        <aside>
+      <!-- Container-->
+      <div class="row justify-content-center">
+        <div class="col-9 info-panel">
+          <div class="row label">
+            <!-- {{-- Gambar 1 --}} -->
+            <div class="col-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-lightning-charge-fill" viewBox="0 0 16 16" class="float-left">
+                <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/>
+                <h5> Unlimited Fast Access </h5>
+                <p> 24 hours to serve your needs for our data</p>
+              </svg>
+            </div>
+            <!-- {{-- Gambar 2 --}} -->
+            <div class="col-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16"  class="float-left">
+                <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+                <h5> Accurate and Up-to-date Data </h5>
+                <p> Relevant and reliable data </p>
+              </svg>
+            </div>
+            <!-- {{-- Gambar 3 --}} -->
+            <div class="col-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-pie-chart-fill" viewBox="0 0 16 16"  >
+                <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778l-5.5 5.5zM8.5.015V7.5h7.485A8.001 8.001 0 0 0 8.5.015z"/>
+                <h5> Appear User and Beginner Friendly </h5>
+                <p> Easy for new users to understand </p>
+              </svg>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- akhir Container -->
+        </aside>
+        <article>
+          <div class="container">
+            <h3 class="title1" id="purpose">
+              Investing for the growth-minded
+            </h3>
+            <img src="/img/invest.jpg" class="invest-ic konten1">
+            <p class="konten1">
+              <ul class="description">
+                <li>Invest spare change in a diversified portfolio</li>
+                <li>Easy, automated way to invest for retirement</li>
+                <li>Checking with a debit card that saves & invests for you </li>
+                <li>Earn bonus investments as you shop at 14,000 brands and refer friends</li>
+                <li>Smart money tips and tricks</li>
+              </ul>
+            </p>
+            <div class="nav-item btn-download">
+              <center>
+                <a href="https://play.google.com/store/search?q=invest%20easy&c=apps" class="btn btn-primary btn-lg btn-menu" type="button" id="myLogin" onclick="alert('Your Download Process is Starting')"> GET THE APP NOW <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="login-img bi-box-arrow-in-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                  <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                  </svg>
+                </a>
+              </center>
+            </div>
+          </div>
+        </article>
+        
+        <article>
+          <img src="/img/investor.jpg" class="invest-pic" id="benefit">
+          <section>
+            <div class="container section">
+              <div class="card">
+                <div class="row justify-content-center">
+                  <div class="col-9 info-panel">
+                    <div class="row">
+                      <h3 class="title-card">Invest at your own place</h3>
+                      <p class="text-card">
+                        Access smart portfolios designed by experts and customized based on your goals. Diversify through ETFs with exposure to over 7,000 stocks and bonds.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="container section">
+              <div class="card">
+                <div class="row justify-content-center">
+                  <div class="col-9 info-panel">
+                    <div class="row">
+                      <h3 class="title-card">Smart portfolios</h3>
+                      <p class="text-card">
+                        Benefit over time with the potential of compound returns. It just means your money makes its own money. The earlier you start, the more you can grow.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="container section">
+              <div class="card">
+                <div class="row justify-content-center">
+                  <div class="col-9 info-panel">
+                    <div class="row">
+                      <h3 class="title-card">Maximize your growth</h3>
+                      <p class="text-card">
+                        $5 investment minimum. Setup Round Ups, daily / weekly / monthly contributions, or one-time deposits whenever you have extra money.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <h3 class="title1 datadiri" id="testimony">
+          Testimonials about the Invest Easy application
+        </h3>
+        <aside class="biodata">
+        
+          <div class="row justify-content-center">
+            <div class="col-9 info-panel">
+              <div class="row">
+                <div class="col-lg">
+                  <div class="container cont-bio">
+                    <img src="/img/biodata.jpg" alt="biodata" class="profil bio">
+                   <div class="identitas bio">
+                    <h2 class="title-bio">Biodata</h2>
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <td class="identifier">Nama</td>
+                          <td>: Faiqotuzzulfa</td>                       
+                        </tr>
+                        <tr>
+                          <td class="identifier">ID Dicoding</td>
+                          <td>: f283y0664</td>                       
+                        </tr>
+                        <tr>
+                          <td class="identifier">Email</td>
+                          <td>: f283y0664@dicoding.org</td>                       
+                        </tr>
+                        <tr>
+                          <td class="identifier">Profesi</td>
+                          <td>: Mahasiswa</td>                       
+                        </tr>
+                        <tr>
+                          <td class="identifier">Jenjang</td>
+                          <td>: Semester 5</td>                       
+                        </tr>
+                        <tr>
+                          <td class="identifier">Prodi</td>
+                          <td>: Teknik Informatika</td>                       
+                        </tr>
+                        <tr>
+                          <td class="identifier">Asal Instansi</td>
+                          <td>: Universitas Negeri Semarang</td>                       
+                        </tr>
+                      </tbody>
+                    </table>
+                   </div>
+                   <div class="comment bio">
+                    <h2 class="title-bio">What they say</h2>
+                    <p class="testi">
+                      "In my opinion, Invest Easy online registration is quite easy and fast.
+                      Even as a beginner can do it without problems.
+                      The conditions are also not complicated, you only need an e-KTP and a bank account.
+                      Based on my experience, after filling out the registration form and submitting it only takes a few minutes until the account can be actively used for transactions."
+                    </p>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+    </main>
+
+    <footer>
+      <div class="penutup">
+        <div class="container ">
+            <div class="d-flex justify-content-between">
+                <p class="col-2 ft">
+                    Copyright &copy; 2022 INVEST EASY
+                </p>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <script>
+      document.getElementById('myLogin').alert('The download process is starting');
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
